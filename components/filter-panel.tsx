@@ -47,16 +47,16 @@ export default function FilterPanel() {
   const applyFilters = () => {
     const params = new URLSearchParams();
 
-    if (edition) params.set("edition", edition);
+    if (edition && edition !== "all") params.set("edition", edition);
     if (minStrength) params.set("minStrength", minStrength);
     if (maxStrength) params.set("maxStrength", maxStrength);
     if (minVitality) params.set("minVitality", minVitality);
     if (maxVitality) params.set("maxVitality", maxVitality);
     if (minTwilight) params.set("minTwilight", minTwilight);
     if (maxTwilight) params.set("maxTwilight", maxTwilight);
-    if (kind) params.set("kind", kind);
-    if (type) params.set("type", type);
-    if (culture) params.set("culture", culture);
+    if (kind && kind !== "all") params.set("kind", kind);
+    if (type && type !== "all") params.set("type", type);
+    if (culture && culture !== "all") params.set("culture", culture);
     if (name) params.set("name", name);
 
     params.set("page", "1");
