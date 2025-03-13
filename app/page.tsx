@@ -8,7 +8,9 @@ export default function Home() {
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         <div className="lg:col-span-1">
-          <FilterPanel />
+          <Suspense>
+            <FilterPanel />
+          </Suspense>
         </div>
         <div className="lg:col-span-3">
           <Suspense
