@@ -2,3 +2,21 @@
   background-color: black !important;
   color: white !important;
 }
+
+.parameters-container,
+.parameters-col_name,
+.parameter__name,
+.swagger-ui .parameter__name,
+.swagger-ui table thead tr td,
+.swagger-ui table thead tr th,
+.swagger-ui .opblock-description-wrapper p,
+.swagger-ui .opblock-external-docs-wrapper p,
+.swagger-ui .opblock-title_normal p,
+.swagger-ui .parameter__type,
+.swagger-ui .markdown p,
+.swagger-ui .markdown pre,
+.swagger-ui .renderedMarkdown p,
+.swagger-ui .renderedMarkdown pre,
+.swagger-ui .response-col_status {
+  color: white;
+}
